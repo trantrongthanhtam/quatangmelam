@@ -825,4 +825,7 @@ a {
   .wrapper > .menu-background {
     display: none;
   }
+  .product-inf > span {
+    font-size:15px;
+  }
 }
