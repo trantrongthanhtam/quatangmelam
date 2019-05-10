@@ -726,6 +726,7 @@ a {
   }
   .filter {
     position: fixed;
+    z-index:1;
     left: -250px;
     overflow: hidden;
     transition: all 1s ease;
@@ -735,6 +736,7 @@ a {
   .filter-show {
     display: flex;
     position: fixed;
+    z-index:1;
     cursor: pointer;
     left: 0; /*230px;*/
     background-color: gainsboro;
