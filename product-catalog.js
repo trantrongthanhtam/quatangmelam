@@ -1,17 +1,17 @@
 $(document).ready(function() {
-  if (window.location.href.indexOf("#lan") != -1) {
+  if (window.location.href.indexOf("#lancheck") != -1) {
     $("#lan").attr("checked", "checked");
   }
-  if (window.location.href.indexOf("#hong") != -1) {
+  if (window.location.href.indexOf("#hongcheck") != -1) {
     $("#hong").attr("checked", "checked");
   }
-  if (window.location.href.indexOf("#sen") != -1) {
+  if (window.location.href.indexOf("#sencheck") != -1) {
     $("#sen").attr("checked", "checked");
   }
-  if (window.location.href.indexOf("#dai") != -1) {
+  if (window.location.href.indexOf("#daicheck") != -1) {
     $("#dai").attr("checked", "checked");
   }
-  if (window.location.href.indexOf("#khac") != -1) {
+  if (window.location.href.indexOf("#khaccheck") != -1) {
     $("#khac").attr("checked", "checked");
   }
   $("#icon-menu-2").click(function() {
