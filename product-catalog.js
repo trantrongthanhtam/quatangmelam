@@ -1,4 +1,19 @@
 $(document).ready(function() {
+  if (window.location.href.indexOf("#lan") != -1) {
+    $("#lan").attr("checked", "checked");
+  }
+  if (window.location.href.indexOf("#hong") != -1) {
+    $("#hong").attr("checked", "checked");
+  }
+  if (window.location.href.indexOf("#sen") != -1) {
+    $("#sen").attr("checked", "checked");
+  }
+  if (window.location.href.indexOf("#dai") != -1) {
+    $("#dai").attr("checked", "checked");
+  }
+  if (window.location.href.indexOf("#khac") != -1) {
+    $("#khac").attr("checked", "checked");
+  }
   $("#icon-menu-2").click(function() {
     if (parseInt($(".header-menu").css("right")) != 0) {
       $(".header-menu").css("right", "0px");
