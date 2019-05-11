@@ -529,6 +529,18 @@ a {
   width: 100%;
 }
 
+.search {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+#searchinput {
+  width:70%;
+  height: 3em;
+}
+
 .kthuoc {
   display:none;
   position: absolute;
