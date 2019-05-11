@@ -788,6 +788,7 @@ a {
   }
   .homeheader > .header-menu {
     position: absolute;
+    z-index:1;
     width: 200px;
     right: -200px;
     height: 302px;
