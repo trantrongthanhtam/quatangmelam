@@ -538,6 +538,7 @@ a {
 
 #searchinput {
   width:70%;
+  padding-left: 10px;
   height: 3em;
 }
 
