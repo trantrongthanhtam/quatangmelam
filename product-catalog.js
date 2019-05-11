@@ -224,4 +224,20 @@ $(document).ready(function() {
       }
     });
   });
+  
+  $('#searchinput').keyup(function () { 
+    var input, filter, myinf, txtValue;
+    input = document.getElementById("searchinput");
+    filter = input.value.toUpperCase();
+    myinf = document.querySelectorAll('.product-inf');
+    for (var i = 0; i < myinf.length;i++){
+      txtValue = myinf[i].innerText;
+      console.log(txtValue);
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        myinf[i].style.display = '';
+      } else {
+        myinf[i].style.display = 'none';
+      }
+    }
+  });
 });
