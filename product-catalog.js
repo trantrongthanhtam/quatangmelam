@@ -74,6 +74,7 @@ $(document).ready(function() {
 
   $(".radio-container").ready(function() {
     $(".header-menu").css("transform", "translateY(" + 80 + "px)");
+    $(".header-menu").css("height", "130px");
     $("#lan").focus(function() {
       document.getElementById("lan").checked == true;
     });
