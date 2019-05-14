@@ -164,6 +164,7 @@ a {
     display: flex;
     flex-direction: row;
     width: auto;
+    height: 100px;
     margin-right: auto;
     margin-left: auto;
     font-size: 18px;
