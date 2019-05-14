@@ -148,7 +148,7 @@ $(document).ready(function() {
     });
 
     if ($(window).width() < 710) {
-      $(".filter").css("left", "-250px");
+      $(".filter").css("left", "-230px");
       $(".filter-show").click(showclick);
         $('.filter').click(showclick);
         function showclick() {
