@@ -417,7 +417,7 @@ a {
 .showroom {
     display: none;
     grid-template-columns: 1fr 90% 1fr;
-    grid-template-rows: 1fr 83% 10% 1fr;
+    grid-template-rows: 1fr 60% 10% 1fr;
     grid-row-gap: 20px;
     position: fixed;
     top: 0;
@@ -432,10 +432,8 @@ a {
 
 .close-button {
     grid-column: 2/3;
-    grid-row: 3/4;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
+    grid-row: 4/5;
+    margin: 0 auto;
     cursor: pointer;
 }
 
@@ -444,7 +442,15 @@ a {
     grid-row: 2 / 3;
     margin-left: auto;
     margin-right: auto;
-    background-color: aqua;
+}
+
+.showroom-mainimg > img {
+    width: auto;
+    height: 60%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .showroom-subimg {
@@ -457,8 +463,8 @@ a {
 
 .showroom-subimg > img {
     cursor: pointer;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /*------------------------------------catalog-main----------------------------------*/
