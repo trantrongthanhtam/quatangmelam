@@ -154,9 +154,9 @@ $(document).ready(function() {
         function showclick() {
         if (parseInt($(".filter").css("left")) == 0) {
           $(".filter-show").css("left", "0");
-          $(".filter").css("left", "-250px");
+          $(".filter").css("left", "-230px");
         } else {
-          $(".filter-show").css("left", "250px");
+          $(".filter-show").css("left", "230px");
           $(".filter").css("left", "0px");
         }
       }
@@ -166,9 +166,11 @@ $(document).ready(function() {
 
     $(window).resize(function() {
       if ($(window).width() < 710) {
-        $(".filter").css("left", "-250px");
+        $(".filter").css("left", "-230px");
+            $(".filter-show").css("left", "0");
       } else {
         $(".filter").css("left", "0px");
+            $(".filter-show").css("left", "230px");
       }
       this.off();
     });
