@@ -112,11 +112,26 @@ $(document).ready(function () {
     
     
     
-    $('.close-button').click(function () {
-        $('.showroom').css('display', 'none');
-        $('html').css('overflow', 'auto');
-        for (var i = 1; i < 5; i++) {
-            $('.showroom-subimg > img:nth-of-type(' + i + ')').css('display', 'block');
-        };
-    });
+    $(".close-button").click(closeclick);
+
+        function closeclick() {
+            $(".showroom").css("display", "none");
+            $("html").css("overflow", "auto");
+            for (var i = 1; i < 5; i++) {
+                $(".showroom-subimg > img:nth-of-type(" + i + ")").css(
+                    "display",
+                    "block"
+                );
+            }
+        }
+        var imgclick = false;
+        $('.showroom').click(function () {
+            $('.showroom > div > img').click(function () {
+                imgclick = true;
+            });
+            if (imgclick == false) {
+                closeclick();
+            }
+            imgclick = false;
+        });
 });
