@@ -1,6 +1,6 @@
 $(document).ready(function() {
       $(".header-menu").css("transform", "translateY(" + 80 + "px)");
-    $(".header-menu").css("height", "110px");
+    $(".header-menu").css("height", "80px");
   if (window.location.href.indexOf("#lancheck") != -1) {
     $("#lan").attr("checked", "checked");
   }
