@@ -124,7 +124,7 @@ $(document).ready(function () {
                 );
             }
         }
-        var imgclick = false;
+        var imgclick = true;
         $('.showroom').click(function () {
             $('.showroom > div > img').click(function () {
                 imgclick = true;
