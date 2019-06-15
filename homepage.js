@@ -4,6 +4,7 @@ $(document).ready(function () {
     $(".mid-quote").css("padding", "0px");
     var heightvalue = parseInt($(".background").css("height"), 10);
     var heightvalue2 = $(window).height();
+    $(".homeheader").css("height", heightvalue);
     if (heightvalue >= heightvalue2) {
         $(".homeheader").css("height", heightvalue2 + "px");
     } else {
