@@ -5,6 +5,7 @@ $(document).ready(function () {
     var heightvalue2 = $(window).height();
     $(".homeheader").css("height", heightvalue2 + "px");
     var heightvalue = parseInt($(".background").css("height"), 10);
+    $('.background').on('load', function() { location.reload();});
     if (heightvalue >= heightvalue2) {
         $(".homeheader").css("height", heightvalue2 + "px");
     } else {
