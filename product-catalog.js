@@ -171,7 +171,6 @@ $(document).ready(function() {
         $(".filter").css("left", "0px");
             $(".filter-show").css("left", "230px");
       }
-      this.off();
     });
 
     $(".showroom-subimg > img").css("opacity", "0.5");
