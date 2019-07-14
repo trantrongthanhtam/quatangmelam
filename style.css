@@ -536,7 +536,7 @@ a {
     grid-template-columns: repeat(auto-fill, 250px);
     grid-column-gap: 60px;
     grid-row-gap: 60px;
-    grid-auto-rows: 370px;
+    grid-auto-rows: 390px;
     justify-content: center;
     margin-bottom: 60px;
     margin-top: 50px;
