@@ -53,6 +53,7 @@ a {
 .homeheader {
     display: grid;
     max-width: 100%;
+    height: calc(100vw * 531/800);
     position: relative;
     grid-template-columns: 0.5fr minmax(460px, 560px) minmax(365px, 1fr);
     justify-content: space-evenly;
