@@ -4,10 +4,10 @@ $(document).ready(function () {
     $(".mid-quote").css("padding", "0px");
     let viewPortHeight = $(window).height();
     let viewPortWidth = $(window).width();
-    if (viewPortWidth >= (viewPortHeight / 531 * 800)) {
-        $(".homeheader").css("height", viewPortHeight + "px");
+    if (viewPortWidth < (viewPortHeight / 531 * 800)) {
+        $(".homeheader").css("height", viewPortWidth / 800 * 531 + "px");
     } else {
-        $(".homeheader").css("height", viewPortWidth);
+        $(".homeheader").css("height", viewPortHeight);
     }
     $(".quote").css("top", parseInt($(".homeheader").css("height"), 10) / 2 - 30);
 
@@ -15,10 +15,10 @@ $(document).ready(function () {
     $(window).resize(function () {
         let viewPortHeight = $(window).height();
         let viewPortWidth = $(window).width();
-        if (viewPortWidth >= (viewPortHeight / 531 * 800)) {
-            $(".homeheader").css("height", viewPortHeight + "px");
+        if (viewPortWidth < (viewPortHeight / 531 * 800)) {
+            $(".homeheader").css("height", viewPortWidth / 800 * 531 + "px");
         } else {
-            $(".homeheader").css("height", viewPortWidth);
+            $(".homeheader").css("height", viewPortHeight);
         }
         $(".quote").css("top", parseInt($(".homeheader").css("height"), 10) / 2 - 30);
     });
