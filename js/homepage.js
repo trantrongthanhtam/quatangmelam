@@ -4,7 +4,7 @@ $(document).ready(function () {
     $(".mid-quote").css("padding", "0px");
     let viewPortHeight = $(window).height();
     let viewPortWidth = $(window).width();
-    if (viewPortWidth < (viewPortHeight / 531 * 800)) {
+    if (viewPortWidth <= (viewPortHeight / 531 * 800)) {
         $(".homeheader").css("height", viewPortWidth / 800 * 531 + "px");
     } else {
         $(".homeheader").css("height", viewPortHeight);
@@ -15,7 +15,7 @@ $(document).ready(function () {
     $(window).resize(function () {
         let viewPortHeight = $(window).height();
         let viewPortWidth = $(window).width();
-        if (viewPortWidth < (viewPortHeight / 531 * 800)) {
+        if (viewPortWidth <= (viewPortHeight / 531 * 800)) {
             $(".homeheader").css("height", viewPortWidth / 800 * 531 + "px");
         } else {
             $(".homeheader").css("height", viewPortHeight);
