@@ -1,5 +1,5 @@
 .body {
-    font-family: "Quicksand", sans-serif;
+    font-family: sans-serif;
     width: 100vw;
     max-width: 100%;
     overflow-y: hidden;
@@ -13,7 +13,7 @@ a {
 }
 
 .wrapper {
-    font-family: "Quicksand", sans-serif;
+    font-family: sans-serif;
     position: absolute;
     left: 0;
     top: 0;
@@ -459,8 +459,6 @@ a {
 .showroom-subimg {
     grid-column: 2/3;
     grid-row: 3/4;
-    margin-left: auto;
-    margin-right: auto;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
