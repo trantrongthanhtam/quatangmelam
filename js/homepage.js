@@ -2,33 +2,25 @@ $(document).ready(function () {
     $(".quote").css("left", "-5vw");
     $(".mid-quote").css("height", "0px");
     $(".mid-quote").css("padding", "0px");
-    var heightvalue2 = $(window).height();
-    $(".homeheader").css("height", heightvalue2 + "px");
-    var heightvalue = parseInt($(".background").css("height"), 10);
-    if (heightvalue >= heightvalue2) {
-        $(".homeheader").css("height", heightvalue2 + "px");
+    let viewPortHeight = $(window).height();
+    let viewPortWidth = $(window).width();
+    if (viewPortWidth >= (viewPortHeight / 531 * 800)) {
+        $(".homeheader").css("height", viewPortHeight + "px");
     } else {
-        $(".homeheader").css("height", heightvalue);
+        $(".homeheader").css("height", viewPortWidth);
     }
     $(".quote").css("top", parseInt($(".homeheader").css("height"), 10) / 2 - 30);
 
 
-
-
-
-
     $(window).resize(function () {
-        heightvalue = parseInt($(".background").css("height"), 10);
-        heightvalue2 = $(window).height();
-        if (heightvalue >= heightvalue2) {
-            $(".homeheader").css("height", heightvalue2 + "px");
+        let viewPortHeight = $(window).height();
+        let viewPortWidth = $(window).width();
+        if (viewPortWidth >= (viewPortHeight / 531 * 800)) {
+            $(".homeheader").css("height", viewPortHeight + "px");
         } else {
-            $(".homeheader").css("height", heightvalue);
+            $(".homeheader").css("height", viewPortWidth);
         }
-        $(".quote").css(
-            "top",
-            parseInt($(".homeheader").css("height"), 10) / 2 - 30
-        );
+        $(".quote").css("top", parseInt($(".homeheader").css("height"), 10) / 2 - 30);
     });
 
 
@@ -36,9 +28,9 @@ $(document).ready(function () {
 
 
     $(window).scroll(function () {
-        var midquote = $(".mid-quote").offset().top;
-        var spanoffset = $(".product").offset().top;
-        var catalogoffset = $(".catalog").offset().top;
+        let midquote = $(".mid-quote").offset().top;
+        let spanoffset = $(".product").offset().top;
+        let catalogoffset = $(".catalog").offset().top;
         if (midquote < $(window).scrollTop() + 550) {
             $(".mid-quote").css("height", "20vh");
             $(".mid-quote").css("padding", "10px 30px 10px 30px");
@@ -82,11 +74,11 @@ $(document).ready(function () {
     $('.product').click(function () {
         $('html').css('overflow', 'hidden');
         $('.showroom').css('display', 'grid');
-        var showlength = $('.product-show > img', this).length;
-        for (var i = 1; i < showlength + 1; i++) {
+        let showlength = $('.product-show > img', this).length;
+        for (let i = 1; i < showlength + 1; i++) {
             $('.showroom-subimg > img:nth-of-type(' + i + ')').attr('src', $('.product-show > img:nth-of-type(' + i + ')', this).attr('src'));
         };
-        for (var i = showlength + 1; i < 5; i++) {
+        for (let i = showlength + 1; i < 5; i++) {
             $('.showroom-subimg > img:nth-of-type(' + i + ')').css('display', 'none');
         };
         var mainsrc = $('.showroom-subimg > img').first().attr('src');
@@ -109,14 +101,14 @@ $(document).ready(function () {
     function closeclick() {
         $(".showroom").css("display", "none");
         $("html").css("overflow", "auto");
-        for (var i = 1; i < 5; i++) {
+        for (let i = 1; i < 5; i++) {
             $(".showroom-subimg > img:nth-of-type(" + i + ")").css(
                 "display",
                 "block"
             );
         }
     }
-    var imgclick = true;
+    let imgclick = true;
     $('.showroom').click(function () {
         $('.showroom > div > img').click(function () {
             imgclick = true;
