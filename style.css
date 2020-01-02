@@ -58,7 +58,7 @@ a {
     grid-template-columns: 0.5fr minmax(460px, 560px) minmax(365px, 1fr);
     justify-content: space-evenly;
     border-bottom: 1px solid;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .homeheader>a {
