@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Quick-sand;
+  src: url("./fonts/static/Quicksand-Medium.ttf");
+}
+
+body {
+  font-family: Quick-sand;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #f3f3f3;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body article {
+  width: 100%;
+}
+
+body .title {
+  width: 100%;
+  border-radius: 0;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+body .contacts {
+  list-style-type: none;
+}
+
+body .contacts span {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+  font-weight: bold;
+}
+
+body .links a::before {
+  content: '• ';
+}
+
+body ul {
+  padding: 0;
+}
+
+body .wrapper {
+  width: 100%;
+  max-width: 1100px;
+  padding: 2rem 3rem;
+}
+
+body .wrapper p {
+  text-align: justify;
+}
+
+body .resume .row {
+  margin-bottom: 1.3rem;
+}
+
+body .resume .row .col-3 {
+  color: grey;
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body .portfolio .card {
+  position: relative;
+  cursor: pointer;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+body .portfolio .card .card-body {
+  position: absolute;
+  opacity: 0%;
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+  font-size: 1rem;
+  color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .portfolio .card:hover .card-body {
+  opacity: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 650px) {
+  body {
+    font-size: 0.7rem;
+  }
+  body .name-title * {
+    font-size: 1rem;
+  }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-size: 1.1rem;
+  }
+  body .container {
+    padding: 0;
+  }
+  body .wrapper {
+    padding: 1rem 1rem;
+  }
+  body .portfolio .card .card-body {
+    font-size: 0.7rem;
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
